@@ -1,0 +1,93 @@
+@import 'options';
+
+.part-1 {
+  .constrained {
+    margin-bottom: 10px !important;
+  }
+
+  header {
+    padding: 40px 0;
+  }
+
+  nav, footer {
+    padding: 20px 0;
+  }
+
+  article, aside {
+    padding: 160px 0;
+  }
+
+  header  { background-color: $red; }
+  nav     { background-color: $yellow; }
+  article { background-color: $green; }
+  aside   { background-color: $blue; }
+  footer  { background-color: $purple; }
+}
+
+.part-2, .part-3 {
+  width: 100%;
+  min-width: 128px;
+  max-width: 640px;
+
+  .col span {
+    display: block;
+    padding: 40px 5px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .col-1 span { background-color: $red; }
+  .col-2 span { background-color: $yellow; }
+  .col-3 span { background-color: $green; }
+  .col-4 span { background-color: $blue; }
+  .col-5 span { background-color: $purple; }
+}
+
+.part-3 {
+  form p {
+    margin: 0;
+  }
+
+  form.inline p, form.inputs p {
+    padding: 40px 10px;
+  }
+
+  form.block p {
+    padding: 26px 10px;
+  }
+
+  label, input {
+    height: 28px;
+    vertical-align: middle;
+  }
+
+  label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  input {
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 1px solid black;
+
+    outline: none;
+    width: 50%;
+  }
+
+  label:after {
+    content: ':';
+  }
+
+  form.block input {
+    width: 100%;
+  }
+
+  .col-1 p { background-color: $red; }
+  .col-2 p { background-color: $yellow; }
+  .col-3 p { background-color: $green; }
+  .col-4 p { background-color: $blue; }
+  .col-5 p { background-color: $purple; }
+}

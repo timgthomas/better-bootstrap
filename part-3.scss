@@ -1,0 +1,66 @@
+@import 'options';
+
+.part-3 {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+    visibility: hidden;
+    position: relative;
+    height: 26px;
+    width: 26px;
+    margin: 0;
+  }
+
+  input[type="radio"]:before, input[type="checkbox"]:before {
+    content: '';
+    visibility: visible;
+    border: 1px solid black;
+    height: 28px;
+    width: 28px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked:after, input[type="radio"]:checked:after {
+    content: '';
+    visibility: visible;
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    background-color: black;
+  }
+
+  input[type="radio"]:before, input[type="radio"]:after {
+    border-radius: 100%
+  }
+
+  select {
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 1px solid black;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+
+    width: 100%;
+    height: 28px;
+  }
+
+  // From Part 2 (for columns)
+
+  .col {
+    float: left;
+    padding: 5px;
+  }
+
+  .col-4 { width:    25%; }
+
+}

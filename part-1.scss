@@ -1,0 +1,18 @@
+@import 'options';
+
+.part-1 {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .constrained {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  main    { overflow: hidden; }
+  article { float: left; width: 70%; }
+  aside   { float: left; width: 30%; }
+
+}

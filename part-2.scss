@@ -1,0 +1,24 @@
+@import 'options';
+
+.part-2 {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .col {
+    float: left;
+    padding: 5px;
+  }
+
+  .col-1 { width:   100%; }
+  .col-2 { width:    50%; }
+  .col-3 { width: 33.33%; }
+  .col-4 { width:    25%; }
+  .col-5 { width:    20%; }
+
+  @media (max-width: 360px) {
+    .col-4 { width:  50%; }
+  }
+
+}

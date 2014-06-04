@@ -1,0 +1,17 @@
+// Colors
+
+$red:    hsl(21,  88%, 78%);
+$yellow: hsl(40,  96%, 80%);
+$green:  hsl(70,  41%, 67%);
+$blue:   hsl(193, 29%, 68%);
+$purple: hsl(280, 20%, 68%);
+$grey:   hsl(  0,  0%, 85%);
+
+$primary: $blue;
+$secondary: lighten(desaturate(invert($primary), 20%), 12%);
+
+// Typography
+
+%normal {
+  font: 300 1.4rem 'Raleway';
+}
