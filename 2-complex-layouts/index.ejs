@@ -1,0 +1,29 @@
+<style>
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    display: flex;
+    /* flex-direction: row; */
+    flex-grow: 1;
+  }
+  aside { flex-grow: 1; }
+  main  { flex-grow: 3; }
+</style>
+<style>
+  .mobile .column {
+    flex-direction: column;
+  }
+  .mobile main  { order: 1; }
+  .mobile aside { order: 2; }
+</style>
+
+<div class="layout">
+  <header>Header</header>
+  <div class="column">
+    <aside>Aside</aside>
+    <main>Main</main>
+  </div>
+  <footer>Footer</footer>
+</div>

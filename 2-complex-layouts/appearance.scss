@@ -1,0 +1,43 @@
+@import '../_options';
+
+#wrapper {
+  resize: both;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 2.0rem;
+  height: 30vw;
+  width: 50%;
+  max-width: 100%;
+}
+
+.layout {
+  height: 100%;
+}
+
+header, aside, main, footer {
+  padding: 2.5vh;
+}
+
+// aside, main {
+//   padding: 7.5vh 2.5vh;
+//
+//   .layout.mobile & {
+//     padding: 2.5vh;
+//   }
+// }
+
+header {
+  background-color: $red;
+}
+
+aside {
+  background-color: $green;
+}
+
+main {
+  background-color: $blue;
+}
+
+footer {
+  background-color: $yellow;
+}

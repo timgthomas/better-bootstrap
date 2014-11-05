@@ -9,6 +9,7 @@ $grey:   hsl(  0,  0%, 85%);
 
 $primary: $blue;
 $secondary: lighten(desaturate(invert($primary), 20%), 12%);
+$transparentish: #eff8fd;
 
 // Typography
 

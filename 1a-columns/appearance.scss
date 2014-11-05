@@ -1,0 +1,44 @@
+@import '../_options';
+
+#wrapper {
+  resize: horizontal;
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 2.0rem;
+  width: 50%;
+  max-width: 100%;
+}
+
+ol {
+  resize: none;
+  width: 100%;
+
+  background-color: $blue;
+  border-radius: 2.0rem;
+  list-style-type: none;
+
+  transition: background-color 200ms;
+
+  &.fixed {
+    background-color: $green;
+    table-layout: fixed;
+  }
+}
+
+li {
+  padding: 5vh 0;
+
+  border: 1px solid $transparentish;
+  border-width: 0 1px;
+
+  font-size: 1.5rem;
+  text-align: center;
+
+  &:first-of-type {
+    border-left-color: transparent;
+  }
+
+  &:last-of-type {
+    border-right-color: transparent;
+  }
+}

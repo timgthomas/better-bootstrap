@@ -2,18 +2,31 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  display: flex;
+
   background-image: url('bg.png');
   background-position: center center;
   background-size: cover;
+}
+
+#container {
+  margin: auto;
+  width: 100%;
 }
 
 section {
@@ -31,7 +44,7 @@ body, input, select {
 
 h1 { font-weight: inherit; }
 
-body > footer {
+body > nav {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -77,6 +90,34 @@ body > footer {
     text-decoration: none;
 
     margin: 0 10px;
+  }
+}
+
+button.action {
+  @extend %normal;
+
+  display: block;
+  margin: 5.0rem auto 0;
+  padding: 1.5rem;
+  width: 25.0rem;
+
+  background-color: rgba(darken($grey, 35%), 0.15);
+  border-radius: 100.0rem;
+  border-width: 0;
+  cursor: pointer;
+  transition: background-color 200ms;
+
+  color: $transparentish;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($grey, 35%);
+    color: white;
+  }
+
+  &:active {
+    background-color: darken($grey, 45%);
   }
 }
 

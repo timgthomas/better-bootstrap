@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Build a Better Bootstrap</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="part-1.css">
-  <link rel="stylesheet" href="part-2.css">
-  <link rel="stylesheet" href="part-3.css">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="appearance.css">
 </head>
 <body>
-  <%- yield %>
-  <footer>
-    <a href="/part-1">Part 1</a>
-    <a href="/part-2">Part 2</a>
-    <a href="/part-3">Part 3</a>
-  </footer>
+  <div id="container"><%- yield %></div>
+  <nav>
+    <a href="/1a-columns">Part 1A</a>
+    <a href="/1b-columns">Part 1B</a>
+    <a href="/2-complex-layouts">Part 2</a>
+  </nav>
+  <script src="/lib/jquery.min.js"></script>
+  <script src="behavior.js"></script>
 </body>
 </html>
